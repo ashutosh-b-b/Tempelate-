@@ -1,0 +1,753 @@
+<html>
+<title>Impulse Design Studio</title>
+ <style>
+    #img1
+    {
+        width: 100%;
+        height: 80%;
+
+    }
+    .btn1
+    {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f26b04;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    height: 10%;
+    border-radius: 10%;
+    }
+    .btn1:hover
+    {
+        background-color: #bc5d14;
+    }
+    #txt1
+    {
+      position: absolute;
+      transform: translate(-50%, -50%);
+
+      top: 30%;
+      left: 50%;
+      color: white ;
+      font-size: 200%;
+    }
+    #txt2
+    {
+      position: absolute;
+      transform: translate(-50%, -50%);
+
+      top: 36%;
+      left: 50%;
+      color: white ;
+      font-size: 200%;
+    }
+    .togbar
+    {
+      display: flex;
+      height: 5%;
+    }
+    .togbar #T
+    { color: #656668;
+      width: 30%;
+      padding-top: 1%;
+      padding-left: 18%;
+      font-size: 200%;
+      font-family: arial;
+    }
+    .togbar .togbtns
+    {
+      width: 10%;
+      padding: 1.5%;
+      font-size: 140%;
+
+    }
+    .togbtnsl
+    {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+    .togbtnsl:hover
+    {
+      color: #f26b04;
+    }
+    .home { width:100%;
+      height: 60%;
+      background-color: #f2f2f2;
+    }
+    #wlcm
+    {
+      padding-left:  40%;
+      padding-top: 5%;
+      font-size: 150%;
+      color: #575859;
+      font-family:Lucida Sans Unicode;
+    }
+    #wlcm2
+    {
+      padding-left: 37.5%;
+      font-size: 180%;
+      font-family: arial black;
+    }
+    #hometxt
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 130%;
+        font-family: arial;
+        color: #96989b;
+        text-align: center;
+    }
+.info
+{
+  display: flex;
+  width: 100%;
+}
+    #serv
+    {
+      width: 33.3333%;
+      height: 50%;
+      background-color: white;
+
+    }
+    .infocont1
+    {
+      display: flex;
+      flex-wrap: wrap;
+      width: 66.666%;
+
+    }
+    .inf1
+    {
+      width: 50%;
+      height: 25%;
+      background-color: #474747;
+    }
+    .inf2
+    {
+      width: 50%;
+      height: 25%;
+      background-color: #ff6932;
+    }
+
+    #h1s
+    { font-size: 250%;
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 2%;
+      color: #545556 ;
+      font-family: "Arial Black", Gadget, sans-serif;
+    }
+    #h1s:hover
+    {
+      color: #f26b04 ;
+    }
+    #ps1
+    {
+      font-family: Georgia, serif;
+      text-align: center;
+      font-size: 130%;
+    }
+    #mobem
+    {
+      width : 10%;
+      padding-left: 45%;
+      padding-top: 5%;
+    }
+    #mobux
+    {
+      color: white;
+      text-align: center;
+      font-size: 150%;
+    }
+    #socialem
+    {
+      width : 20%;
+      padding-left: 40%;
+      padding-top: 7%;
+    }
+    #socialm
+    {
+      color: white;
+      text-align: center;
+      font-size: 150%;
+    }
+    #webdem
+    {width : 15%;
+    padding-left: 45%;
+    padding-top: 5%;
+    }
+    #webd
+    {
+      color: white;
+      text-align: center;
+      font-size: 150%;
+    }
+    #earthem
+    {
+      width : 20%;
+      padding-left: 40%;
+      padding-top: 5%;
+    }
+    #glb
+    {
+      color: white;
+      text-align: center;
+      font-size: 150%;
+    }
+    .ourteambg
+    {
+      width: 100%;
+      height: 90%;
+    }
+
+    .ourteam
+    {
+      position: relative;
+      text-align: center;
+    }
+    #otbg
+    {
+      width: 100%;
+      height: 50%;
+    }
+    #ot
+    {
+      position: absolute;
+      bottom:  80%;
+      left: 32%;
+      color: white;
+      transform: translate(50% , 50%);
+      font-size: 400%;
+      font-family: arial;
+    }
+    #ulot
+    {
+      position: absolute;
+      bottom:  78%;
+      left: 36%;
+      color: white;
+      transform: translate(50% , 50%);
+      font-size: 400%;
+      font-family: arial;
+    }
+    #disot
+    {
+      position: absolute;
+      bottom : 65%;
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .teamcont
+    { position: absolute;
+      bottom: 5%;
+      display: flex;
+      width : 66%;
+      margin-left: 18%;
+      margin-right: 17%;
+      height: 58%;
+    }
+    .teammem
+    {
+      width: 26%;
+      margin: 3%;
+      background-color: #f74b31;
+      text-align: center;
+    }
+    .teammem1
+    { width: 100%;
+      height: 75%;
+    }
+    .teammem1:hover
+    {
+      opacity: 0.8;
+    }
+    #name1
+    {
+      height: 6%;
+      color:#3f3d3d;
+      font-family: arial black;
+      font-size: 120%;
+    }
+    #desgn
+    {
+      height: 7%;
+      color:white;
+      font-family: arial ;
+      font-size: 120%;
+    }
+    .portf
+    {
+      width: 100%;
+      height: 80%;
+      background-color: #e5e0e0;
+    }
+    .portfcont
+    { display: flex;
+      width: 70%;
+      height: 25%;
+      margin-left: 15%;
+      margin-right: 15%;
+      flex-wrap: wrap;
+    }
+    .wrkimg
+    {
+      width: 20%;
+      margin: 2.5%;
+
+    }
+    .wrkimg1
+    { height: 100%;
+      width: 100%;
+      opacity: 0.6;
+    }
+    #portft
+    {
+      height: 5%;
+      text-align: center;
+      font-size: 200%;
+      font-family: arial black;
+      padding: 4%;
+      color: #323233;
+    }
+    #portfl
+    {
+      text-align: center;
+      font-size: 110%;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: #6b6c6d;
+    }
+    .pricecont
+    {
+      display: flex;
+      height: 60%;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .pricebox
+
+    { height: 100%;
+       width: 32%;
+      margin: 1%;
+      background-color: #e5e0e0;
+    }
+    #priceboxmin1
+    { text-align: center;
+      font-family:  comic sans-serif;
+      font-size: 180%;
+      padding-top: 5%;
+      height: 15%;
+
+    }
+    #priceboxmin2
+    {
+      height: 25%;
+      background-color: #ff6932;
+    }
+    #pricemin22
+    { padding: 5%;
+      font-size: 240%;
+      text-align: center;
+      color: white;
+
+    }
+    #pricemin23
+    { padding: 1%;
+      font-size: 110%;
+      text-align: center;
+      color: white;
+    }
+    #priceboxmin3
+    { margin-top: 0.8%;
+      background-color: #ff6932;
+      height: 57%;
+    }
+    #pricemin33
+    {
+      color: white;
+      padding:8%;
+      text-align: center;
+    }
+    .pricebtn
+    {
+      margin-left: 30%;
+      width: 40%;
+      height: 20%;
+      background-color: #ffff;
+      font-size: 110%;
+    }
+      .pricebtn:hover
+      { margin-left: 25%;
+        width: 50%;
+        height: 25%;
+      }
+    .contactcont
+    { margin-top: 2%;
+       position: relative;
+      text-align: center;
+      color: white;
+      height: 80%;
+    }
+    .contactbg
+    {
+      height: 100%;
+      width: 100%;
+    }
+    .frm
+
+    { margin: 1%;
+       width: 100%;
+  height: 100%;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    .ipcont
+    { margin-left: 35%;
+      margin-right: 35%;
+      display: flex;
+      width: 30%;
+      margin-top: 5%;
+      flex-wrap: wrap;
+    }
+    .iptext1
+    { font-size: 130%;
+      height: 9%;
+      margin: 1%;
+     width: 100%;
+    }
+    .iptext2
+    { font-size: 130%;
+      height: 9%;
+      margin: 1%;
+     width: 100%;
+    }
+    .iptext3
+    { font-size: 130%;
+      height: 20%;
+      margin: 1%;
+     width: 100%;
+    }
+    .contbtn
+    {
+      font-size: 120%;
+      color: white;
+      background-color: #ff6932;
+      height: 10%;
+      width: 100%;
+      border-color: #ff6932;
+    }
+    .contus
+    { font-size: 250%;
+      margin-top: 2%;
+      text-align: center;
+    }
+    #ulot1
+    {
+      font-size: 250%;
+        text-align: center;
+    }
+
+    #cright
+    { text-align: center;
+      color: orange;
+      font-size: 120%;
+    }
+    .mapb
+    {
+      background-image: url(images/mapbg.jpg);
+      width: 100%;
+      height: 60%;
+    }
+    .footer{
+    	background-color: black;
+    	color: white;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+      height: 30%;
+
+    }
+
+    .flw{
+    	font-size: 32px;
+    	font-family: arial black;
+
+    }
+
+    .icon1{
+    	display: flex;
+    	width: 32%;
+    	min-width: 400px;
+    	justify-content: space-between;
+    	margin: auto;
+    	align-items: center;
+    }
+
+    .icon11 img{
+    	background-color: white;
+    	padding: 0.8em;
+    	border-radius: 100px;
+    	height: 27px;
+    }
+
+ </style>
+ <script>
+ function price()
+ {
+   document.getElementById("priceboxmin1").style.color = ;
+ }
+ function contactbtnfun()
+ {
+   document.getElementById("contbtn").innerHTML = ">>>>>>>>>";
+ }
+
+ </script>
+
+<body>
+    <header>
+        <div class  = "img1d">
+        <img src = "images/img1.jpg" id="img1">
+        <button type = "button" class="btn1">Get Started</button>
+        <div id="txt1">Impulse</div>
+        <div id="txt2">DESIGN STUDIO</div>
+        </div>
+    </header>
+
+
+    <div class="togbar">
+      <div  id="T">Impulse</div>
+      <div class="togbtns"><a class="togbtnsl" href = "">Home</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = "">Info</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = "">Work</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = "#ourteam">Team</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = ".portf">Portfolio</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = "">Price</a></div>
+      <div class="togbtns"><a class="togbtnsl" href = "">Contact</a></div>
+     </div>
+
+
+
+     <div class="home" id="home">
+          <p id="wlcm">WELCOME TO IMPULSE</p>
+          <p id="wlcm2">Branding & Digital Studio </p>
+          <p id="hometxt">Welcome to Impulse Digital Studios.This is a premium network offered exclusively to
+            creative freelancers who want to build a professional personal brand.
+             Our goal is to help you to get exposure and grow your freelance career.
+             We exist to serve organizations that are making a positive social impact.
+              We bring teams of creative and technical talent together to help our clients achieve their mission.</p>
+      </div>
+
+
+<div class="info" id="info" >
+        <div id = "serv">
+            <h1 id="h1s">
+                Service
+            </h1>
+            <p id="ps1">
+                We believe
+    that great design and effective communication are key ingredients
+    for improving our lives and the world around us.
+            </p>
+        </div>
+
+
+    <div class="infocont1">
+        <div class="inf1">
+          <img src="images/mobem.png" id = "mobem">
+          <p id="mobux">Mobile UX</p>
+        </div>
+        <div class="inf2">
+          <img src="images/social.png" id="socialem">
+          <p id="socialm">Social Media</p>
+        </div>
+        <div class="inf2">
+            <img src="images/webd.png" id="webdem">
+            <p id="webd">Web Development</p>
+        </div>
+        <div class="inf1">
+            <img src="images/earth.png" id="earthem">
+            <p id="glb">Global</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="ourteam">
+  <img src="images/ourteambg.jpg" id="otbg">
+  <img src="images/ourteambg2.png" id="otbg">
+  <div id="ot">Our team</div>
+  <div id="ulot">______</div>
+  <div id="disot">Each team member is conversant with his domain. Collectively, we work towards the
+      common goal of providing you
+    with the best returns </div>
+<div class="teamcont">
+  <div class="teammem">
+    <img src="images/teammem1.jpg" class="teammem1">
+    <div id="name1">David</div>
+    <div id="desgn">Manager</div>
+  </div>
+  <div class="teammem">
+    <img src="images/teammem2.png" class="teammem1">
+    <div id="name1">Linda</div>
+    <div id="desgn">Developer</div>
+  </div>
+  <div class="teammem">
+  <img src="images/teammem3.png" class="teammem1">
+  <div id="name1">Mary</div>
+  <div id="desgn">Designer</div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="portf">
+  <div id="portft">Portfolio</div>
+  <div id="ulot">______</div>
+  <div id="portfl">A portfolio is a grouping of financial assets such as stocks,
+    bonds, commodities, currencies and cash equivalents, as well as their fund
+    counterparts, including mutual, exchange-traded and closed funds</div>
+  <div class="portfcont">
+    <div class="wrkimg">
+      <img src="images/portf/work1.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work2.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work3.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work4.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work5.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work6.jpeg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work7.jpg" class="wrkimg1">
+    </div>
+    <div class="wrkimg">
+      <img src="images/portf/work8.jpg" class="wrkimg1">
+    </div>
+  </div>
+</div>
+
+
+<div class="price">
+  <div class="pricecont">
+
+    <div class="pricebox">
+      <div id="priceboxmin1">Basic</div>
+      <div id="priceboxmin2">
+        <div id="pricemin22">$25</div>
+        <div id="pricemin23">per month</div>
+      </div>
+      <div id="priceboxmin3">
+        <div id="pricemin33">5 Accounts</div>
+        <div id="pricemin33">20 GB Space</div>
+        <div id="pricemin33">20 Basic Themes</div>
+        <button type="button" class="pricebtn">Get Started</btn>
+      </div>
+    </div>
+
+
+      <div class="pricebox">
+        <div id="priceboxmin1">Buisness</div>
+        <div id="priceboxmin2">
+          <div id="pricemin22">$50</div>
+          <div id="pricemin23">per month</div>
+        </div>
+        <div id="priceboxmin3">
+          <div id="pricemin33">10 Accounts</div>
+          <div id="pricemin33">50 GB Space</div>
+          <div id="pricemin33">30 Pro Themes</div>
+          <button type="button" class="pricebtn" onmouseover="price()">Get Started</btn>
+        </div>
+      </div>
+
+      <div class="pricebox">
+        <div id="priceboxmin1">Professional</div>
+        <div id="priceboxmin2">
+          <div id="pricemin22">$75</div>
+          <div id="pricemin23">per month</div>
+        </div>
+        <div id="priceboxmin3">
+          <div id="pricemin33">15 Accounts</div>
+          <div id="pricemin33">100 GB Space</div>
+          <div id="pricemin33">50 Pro Themes</div>
+          <button type="button" class="pricebtn" onmouseover="price()">Get Started</btn>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="contactcont">
+  <img src="images/contactbg1.jpg" class="contactbg">
+  <form class="frm">
+    <div class="contus">Contact Us</div>
+    <div id="ulot1">______</div>
+    <div class="ipcont">
+    <input type="text" class="iptext1" placeholder="Name"></input>
+    <input type="email" class="iptext2" placeholder="Email"></input>
+    <input type="text" class="iptext3" placeholder="Message"></input>
+    <button type="button" class="contbtn" id="contbtn" onmouseover="contactbtnfun()">Send</button>
+  </div>
+  </form>
+</div>
+<div class="mapb">
+
+</div>
+<div class="footer">
+  <div class="flw">
+    Follow Us
+  </div>
+  <div class="icon1">
+    <div class="icon11">
+      <img src="images/logos/logo1.png">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo2.png">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo3.png">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo4.jpg">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo5.jpg">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo6.png">
+    </div>
+    <div class="icon11">
+      <img src="images/logos/logo7.png">
+    </div>
+  </div>
+
+</div>
+<script>
+var x = document.querySelector("#priceboxmin1");
+
+</script>
+</body>
+</html>
